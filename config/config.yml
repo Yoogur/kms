@@ -1,0 +1,6 @@
+database:
+  host: 106.54.192.168
+  port: 27017
+  username: yoogur
+  password: kb970801
+  database_name: db_test
