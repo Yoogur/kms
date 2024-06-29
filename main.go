@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"kms/config"
 	"kms/controllers"
 	"kms/db"
@@ -19,6 +20,7 @@ func main() {
 	db.ConnectDatabase()
 
 	r := router.SetupRouter()
+	fmt.Println("starting server")
 
 	articleRepo := repositories.NewMongoArticleRepositories()
 	articleService := services.NewArticleService(articleRepo)
